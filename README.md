@@ -12,8 +12,7 @@ npm install
 
 ```bash
 npm start
-# ou em modo de desenvolvimento (com nodemon instalado globalmente):
-npm run dev
+
 ```
 
 ## Rotas
