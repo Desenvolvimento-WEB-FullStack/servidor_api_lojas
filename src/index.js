@@ -4,9 +4,12 @@ const productRoutes = require("./routes/products");
 
 const app = express();
 const PORT = process.env.PORT || 3000;
+const cors = require("cors");
 
 // body parser embutido no Express a partir da 4.16
 app.use(express.json());
+
+app.use(cors());
 
 // rotas
 app.use("/auth", authRoutes);
