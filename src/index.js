@@ -1,6 +1,6 @@
 const express = require("express");
 const authRoutes = require("./routes/auth");
-const productRoutes = require("./routes/products");
+const anunciosRoutes = require("./routes/anuncios");
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -13,7 +13,7 @@ app.use(cors());
 
 // rotas
 app.use("/auth", authRoutes);
-app.use("/products", productRoutes);
+app.use("/anuncios", anunciosRoutes);
 
 app.get("/", (req, res) => {
   res.send("API de loja rodando");
